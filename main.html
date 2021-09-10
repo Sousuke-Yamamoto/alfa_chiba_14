@@ -83,10 +83,15 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">家庭科室の扉が開いた！<br>
-                さぁ先生を助けるため<br>
-                ３つステージの謎をとき、暗号を見つけ出そう！</div>
+              <div class="clear-message__title">STAGE：１  正解！</div>
+              <div class="clear-message__content">友達と連絡が取れるようになった<br>
+                まず連絡が取れたのは友達の『みか』と『たくろう』だ。<br>
+                居場所を聞いたら自分たちがどこにいるのか、なぜ此処にいるかわからないと言われた。<br>
+              とりあえずその場所にあるものを何個か言ってもらいそこが理科室とわかった。<br>
+              急いで理科室へ向かい、二人の顔を見て一安心し教室に一歩踏み入れると、<br>
+              いきなり扉が閉まり3人とも閉じ込められてしまった！<br>
+              その瞬間、教室内にシューと音がなり謎の気体が充満し始めた。<br>
+              びっくりして急いで外に出ようとドアに近づいた時に...</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
