@@ -278,7 +278,105 @@ STAGE3-3追加　ここまで -->
           
       </div>
       <!-- STAGE3　ここまで -->
+     
+      <!-- STAGE4　ここから -->
+      <!---------------------------------------------------------------------
+        クリア画面の「次のステージへ」ボタンをクリックしたら表示します。
+        v-if="next['stage1']"はnext['stage1']がtrueになったら表示します。
+      ----------------------------------------------------------------------->
+      <div v-if="next['stage1']" id="sectionStage2" class="stage">
+        <section>
+          <div class="section">
+            <div class="container">
+              <h4 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>貼り紙の謎を解け！</h2>
+              <p class="text-center"><br>
+                教室のドアに紙が貼ってあることに気がついた。<br>
+                そこには「毒ガスが充満する前に謎の答えを紙に書き、正解しろ。さもなくばお前と友達は死ぬことになる」<br>
+                教室には筆記用具等の文字をかけるものはなく理科特有の実験道具だけだった。
+                とりあえず死ぬことだけは避けたい主人公たちは謎を解くことにした...</p>
+            </div>
+          </div>
+          <div class="stage-column__container section bg-color--keycolor">
+            <div class="container">
+              <h4 class="section-title"><span class="section-title__stage">STAGE：4</span>謎の答えを入力</h2>
+              <!-------------------------------------------------------------
+                class名"row"内のclass名"column"が横並びになります。
+                改行する場合は以下のように追加してください。
+                <div class="row">
+                  <div class="column">
+                    ～ 内容 ～
+                  </div>
+                </div>
+              ------------------------------------------------------------->
+              <div class="row">
 
+                <!-- STAGE4-1　ここから -->
+                <div class="column">
+                  <!-- STAGE4-1問題セクション　ここから -->
+                  <figure class="image__container">
+                    <img src="assets/images/iOS の画像-5.png" alt="">
+                  </figure>
+                  <!-- STAGE4-1問題セクション　ここまで -->
+                  <!-- STAGE4-1解答入力セクション　ここから -->
+                  <answer-input v-bind:correct="correctAnswer['stage4']['q1']" v-on:answer-input="answerInput($event, 'stage4', 1)"></answer-input>
+                  <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
+                  <!-- STAGE4-1解答入力セクション　ここまで -->
+                </div><!-- /.column -->
+                <!-- STAGE4-1　ここまで -->
+
+<!-- STAGE4-2 を追加
+
+                <div class="column">
+
+                  <figure class="image__container">
+                    <img src="assets/images/stage.png" alt="">
+                  </figure>
+
+                  <answer-input v-bind:correct="correctAnswer['stage4']['q4']" v-on:answer-input="answerInput($event, 'stage4', 2)"></answer-input>
+                  <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
+                　
+                </div>
+
+2-2追加ここまで -->
+                  
+<!-- STAGE2-3 を追加
+
+                <div class="column">
+
+                  <figure class="image__container">
+                    <img src="assets/images/stage.png" alt="">
+                  </figure>
+
+                  <answer-input v-bind:correct="correctAnswer['stage2']['q3']" v-on:answer-input="answerInput($event, 'stage2', 3)"></answer-input>
+                  <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
+
+                </div>
+
+2-3追加ここまで -->
+
+              </div><!-- /.row -->
+
+            </div>
+          </div>
+        </section>
+
+        <!-- STAGE2クリア画面　ここから -->
+        <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
+          <div class="container">
+            <div class="clear-message">
+              <div class="clear-message__title">STAGE：2　正解！</div>
+              <div class="clear-message__content">扉が開き、なんとか生き延びることができた。<br>
+                次はまだ見つかってない友達の『たけし』と『ひろし』を探しに行こう。<br>
+              扉が開くと同時に連絡がつくようになっていたが、聞いてみると、どうやら身動きが取れないらしい...<br>
+              2人にヒントをもらいながら探索をした結果合流することはできたが、家庭科室で手足を縛られ拘束されており、<br>
+              座っている床には大量の油が振り撒かれ、少しでも火を近づけたら、数少ない友達が火の海の中に消えてしまう...！</div>
+                <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+            </div>
+          </div>
+        </section>
+        <!-- STAGE2クリア画面　ここまで -->
+      </div>
+      <!-- STAGE2　ここまで -->
     </div>
   </main>
   <footer class="footer section bg-color--gray">
