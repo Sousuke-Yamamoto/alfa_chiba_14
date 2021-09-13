@@ -186,9 +186,12 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__title">STAGE：2　正解！</div>
+              <div class="clear-message__content">扉が開き、なんとか生き延びることができた。<br>
+                次はまだ見つかってない友達の『たけし』と『ひろし』を探しに行こう。<br>
+              扉が開くと同時に連絡がつくようになっていたが、聞いてみると、どうやら身動きが取れないらしい...<br>
+              2人にヒントをもらいながら探索をした結果合流することはできたが、家庭科室で手足を縛られ拘束されており、<br>
+              座っている床には大量の油が振り撒かれ、少しでも火を近づけたら校舎が燃え、火の海の中に消えてしまう...！</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
