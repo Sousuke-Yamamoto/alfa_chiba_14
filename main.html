@@ -533,49 +533,10 @@ STAGE3-3追加　ここまで -->
                 </div><!-- /.column -->
                 <!-- STAGE6-1　ここまで -->
 
-<!-- STAGE6-2 を追加
-                <div class="column">
-                  <figure class="image__container">
-                    <img src="assets/images/stage.png" alt="">
-                  </figure>
-                  <answer-input v-bind:correct="correctAnswer['stage6']['q3']" v-on:answer-input="answerInput($event, 'stage6', 2)"></answer-input>
-                  <a class="link-hint" href="hint5.html" target="hint5">ヒントをみる ></a>
-                　
-                </div>
-5-2追加ここまで -->
-                  
-<!-- STAGE5-3 を追加
-                <div class="column">
-                  <figure class="image__container">
-                    <img src="assets/images/stage.png" alt="">
-                  </figure>
-                  <answer-input v-bind:correct="correctAnswer['stage5']['q3']" v-on:answer-input="answerInput($event, 'stage5', 3)"></answer-input>
-                  <a class="link-hint" href="hint5.html" target="hint5">ヒントをみる ></a>
-                </div>
-5-3追加ここまで -->
 
               </div><!-- /.row -->
 
-            </div>
-          </div>
-        </section>
 
-        <!-- STAGE6クリア画面　ここから -->
-        <section v-if="clear['stage5']" v-bind:class="{isClear:clear['stage5']}"  class="section section--clear bg-color--gray">
-          <div class="container">
-            <div class="clear-message">
-              <div class="clear-message__title">STAGE：6　正解！</div>
-              <div class="clear-message__content">扉が開き、なんとか生き延びることができた。<br>
-                次はまだ見つかってない友達の『たけし』と『ひろし』を探しに行こう。<br>
-              扉が開くと同時に連絡がつくようになっていたが、聞いてみると、どうやら身動きが取れないらしい...<br>
-              2人にヒントをもらいながら探索をした結果合流することはできたが、家庭科室で手足を縛られ拘束されており、<br>
-              座っている床には大量の油が振り撒かれ、少しでも火を近づけたら、数少ない友達が火の海の中に消えてしまう...！</div>
-                <button v-on:click="nextStage('stage6')" onclick="location.href='#sectionStage7'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
-            </div>
-          </div>
-        </section>
-        <!-- STAGE6クリア画面　ここまで -->
-      </div>
       <!-- STAGE6　ここまで -->
     </div>
   </main>
