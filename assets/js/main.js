@@ -31,12 +31,12 @@ const app = Vue.createApp({
           // q3: 'ききき',
         },
         stage4: {
-          q1: 'FLASH',
+          q1: 'GHOST',
           // q2: 'えええ',
           // q3: 'おおお'
         }, 
         stage5: {
-          q1: 'おおお',
+          q1: 'FLASH',
           // q2: 'えええ',
           // q3: 'おおお'
         }, 
